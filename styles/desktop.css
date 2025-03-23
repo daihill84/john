@@ -1,0 +1,219 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body and overall layout */
+body {
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2b3a42;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header .header-subheading {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* Call Button */
+.call-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.call-button a {
+    background-color: #f45b69;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-button a:hover {
+    background-color: #d35c7a;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px 10%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.main-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2b3a42;
+}
+
+/* Service Section */
+.service-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.service-card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #666;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Experience Section */
+.experience {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2b3a42;
+}
+
+.experience ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.experience li {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.experience li strong {
+    color: #2b3a42;
+}
+
+/* Service Area Section */
+.service-area {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+    margin-top: 60px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.service-area h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2b3a42;
+}
+
+.service-area ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.service-area li {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #2b3a42;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+footer a {
+    color: #f45b69;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #d35c7a;
+}
+
+/* Responsive Flexbox for service section */
+@media (max-width: 1200px) {
+    .service-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Hover effects for service cards */
+@media (max-width: 992px) {
+    .service-card {
+        width: 100%;
+    }
+
+    .service-section {
+        display: block;
+    }
+}

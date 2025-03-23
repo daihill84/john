@@ -1,0 +1,132 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and overall layout */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header .header-subheading {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Call button */
+.call-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.call-button a {
+    background-color: #f45b69;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Service section */
+.service-section {
+    display: block;
+    margin: 20px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.service-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Experience section */
+.experience {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.experience ul {
+    list-style-type: none;
+}
+
+.experience li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Service Area section */
+.service-area {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.service-area h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.service-area ul {
+    list-style-type: none;
+}
+
+.service-area li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #f45b69;
+    text-decoration: none;
+}
